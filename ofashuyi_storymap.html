@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landst Programs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="Landsat Satellite Program"/>
+    <meta property="og:url" content="https://landsat.gsfc.nasa.gov/"/>
+    <meta property="og:description" content="Chronology of Landsat Programs."/>
+    <meta property="og:image" content="../../img/social.png"/>
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="../../dist/storymap.2.5.css">
+    <!--add required libraries-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!--boostrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--mini globle map-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="../../js/globeminimap.js"></script>
+
+    <!--story map plugin-->
+    <script src="../../dist/storymap.2.5.js"></script>
+</head>
+<body>
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+            <section data-scene="overview" data-background="../../assets/landsat.mp4">
+                <div class="fullscreen text-center">
+
+                    <h2 class="display-4 d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">Landsat Programs</h2>
+                    <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">Imaging the Earth from Beyond</small>
+                </div>
+            </section>
+
+            <section data-scene="landsat">
+                <h2>The Landsat Program</h2>
+                <p>Landsat shows us Earth from space. The Landsat program is the longest-running enterprise for acquisition of satellite imagery of Earth.
+                  On July 23, 1972 the Earth Resources Technology Satellite was launched. This was eventually renamed to Landsat. The most recent (Landsat 8)
+                  was launched on February 11, 2013. The instruments on the Landsat satellites have acquired millions of images. The images archived in the United
+                  States and at Landsat receiving stations around the world are a unique resource for global change research and applications in agriculture,
+                  cartography, geology, forestry, regional planning, surveillance, and education. The data can be viewed through the U.S. Geological Survey (USGS)
+                  'EarthExplorer' website. Landsat images are usually divided into scenes for easy downloading. Each Landsat scene is about 115 miles long and 115 miles
+                  wide (or 100 nautical miles long and 100 nautical miles wide or 185 kilometers long and 185 kilometers wide).</p>
+                  <center><img src="../../img/landsat.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat"></center><hr>
+                <p>Landsat data have contributed to our understanding of the Earth in innumerable ways — from measuring the speed of Antarctic glaciers, to tracking water
+                  use in crop fields in the Western United States, and to monitoring deforestation in the Amazon rainforest. The usefulness of the data stems from a variety
+                  of factors engineered into the satellite and the mission project.</p>
+            </section>
+
+            <section data-scene="landsat1">
+                <h2>Landsat 1</h2>
+                <p>Landsat, originally named "Earth Resources Technology Satellite" with label "1" or "A", was the first satellite of the United States' Landsat program.
+                  It was a modified version of the Nimbus 4 meteorological satellite and was launched on July 23, 1972 by a Delta 900 rocket from Vandenberg Air Force Base
+                  in California. The near-polar orbiting spacecraft served as a stabilized, Earth-oriented platform for obtaining information on agricultural and forestry
+                  resources, geology and mineral resources, hydrology and water resources, geography, cartography, environmental pollution, oceanography and marine resources,
+                  and meteorological phenomena.</p>
+                  <center><img src="../../img/landsat1.png" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat1"></center><hr>
+                  <p>Landsat 1 had two sensors to achieve its primary objectives: the return beam vidicon (RBV) and the multispectral scanner (MSS).</p>
+                  <p>The RBV was manufactured by the Radio Corporation of America (RCA). The RBV obtained visible light and near infrared photographic images of Earth.
+                    At launch, the RBV was considered the primary sensor.</p>
+                  <p>The MSS was manufactured by Hughes Aircraft Company. The sensor was considered an experimental sensor, and was the secondary sensor, until scientists
+                    reviewed the data that was beamed back to Earth. After the data was reviewed, the MSS was considered the primary sensor. The MSS was a four-channel scanner
+                    that obtained radiometric images of Earth.</p>
+            </section>
+
+            <section data-scene="landsat2">
+                <h2>Landsat 2</h2>
+                <p>Landsat 2 is the second satellite of the Landsat program. The spacecraft originally carried "Earth Resource Technology Satellite B" designation but was
+                  renamed "Landsat 2" prior to its launch on January 22, 1975. The objective of the satellite was to acquire global, seasonal data in medium resolution
+                  from a nearto polar sun-synchronous orbit. The satellite (built by General Electric) acquired data with the Return Beam Vidicon (RBV) and the Multispectral
+                  Scanner (MSS). Despite having a design life of one year, Landsat 2 operated for over seven years, finally ceasing operations on February 25, 1982.</p>
+                  <center><img src="../../img/landsat2.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat 2"></center><hr>
+                <p>As in the case of its predecessor, Landsat 1, the satellite's payload included two remote sensing instruments - the Return Beam Vidicon (RBV) and the
+                  Multispectral Scanner (MSS). The scene size (area surveyed by the sensors per scan)for the scanners of the MSS was 170 kilometers (110 mi) to 185 km (115 mi).
+                  The ground sampling interval of the MSS was 57 m (187 ft) to 79 m (259 ft)The data acquired by the MSS was considered more scientifically useful than the data
+                  returned from the RBV, which was rarely used and considered only for engineering evaluation purposes.</p>
+                <p>The MSS was built by Hughes Aircraft Corporation. It was capable of detecting four different spectral bands: band 4 (visible green), band 5 (visible red),
+                  band 6 (near infrared), and band 7 (near infrared).</p>
+                <p>Each spectral band had different scientific uses. Band 4 primarily investigated areas of water with the ability to detect sediment laden and shallow water areas.
+                  Band 5 was primarily used to identify cultural features. Band 6 sensed the vegetation boundaries between land, water, and landforms. Band 7 was the most proficient
+                  at sensing through atmospheric haze, and identified water and land boundaries, vegetation, and landforms.</p>
+            </section>
+
+            <section data-scene="landsat3">
+                <h2>Landsat 3</h2>
+                <p>Landsat 3 is the third satellite of the Landsat program. It was launched on March 5, 1978, with the primary goal of providing a global archive of satellite
+                  imagery.</p>
+                <p>Unlike later Landsat satellites, Landsat 3 was managed solely by NASA. Landsat 3 decommissioned on September 7, 1983, beyond its design life of one year.
+                  The data collected during its lifetime were used by 31 countries. Countries that cannot afford their own satellite were able to use the data for ecological
+                  preservation efforts and to determine the location of natural resources.</p>
+                  <center><img src="../../img/landsat3.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat3"></center><hr>
+                <p>Landsat 3 carried a Multispectral Scanner (MSS), built by Hughes Aircraft Corporation, and the Return Beam Vidicon (RBV) sensors. The MSS had a maximum 75
+                  meters (246 ft) resolution. The primary mission of the MSS was to obtain data for agriculture, forestry, geology, and hydrology, but the MSS could also collect
+                  information for oceanography and meteorology purposes. Unlike Landsat 1 and 2 missions, Landsat 3 carried a thermal band, but the instrument failed shortly after
+                  the satellite was deployed on July 11, 1978.</p>
+                  <p>The MSS had five spectral bands - one spectral band more than Landsat 1 and 2. Band 4 primarily investigated water areas. It had the ability to detect sediment
+                  laden and shallow water areas. Band 5 was primarily used to identify cultural features. Band 6 sensed vegetation boundaries between land, water, and landforms.
+                  Band 7 was most proficient at sensing through atmospheric haze, water and land boundaries, vegetation, and landforms.</p>
+                <p>MSS scene size was 170 kilometers (110 mi) to 185 km (115 mi) and had ground sampling interval of 57 m (187 ft) to 79 m (259 ft).</p>
+            </section>
+
+            <section data-scene="landsat4">
+                <h2>Landsat 4</h2>
+                <p>Landsat 4 is the fourth satellite of the Landsat program. It was launched on July 16, 1982, with the primary goal of providing a global archive of satellite imagery.
+                  Although the Landsat Program is managed by NASA, data from Landsat 4 was collected and distributed by the U.S. Geological Survey.</p>
+                <p>Landsat 4 science operations ended on December 14, 1993 when the satellite lost its ability to transmit science data - far beyond its designed life expectancy of
+                  five years. The satellite housekeeping telemetry and tracking continued to be maintained by NASA until it was decommissioned on June 15, 2001.</p>
+                <center><img src="../../img/landsat4.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat4"></center><hr>
+                <p>Landsat 4 is the fourth satellite of the Landsat program. It was launched on July 16, 1982, with the primary goal of providing a global archive of satellite imagery.
+                  Although the Landsat Program is managed by NASA, data from Landsat 4 was collected and distributed by the U.S. Geological Survey.</p>
+                <p>Landsat 4 science operations ended on December 14, 1993 when the satellite lost its ability to transmit science data - far beyond its designed life expectancy of
+                  five years. The satellite housekeeping telemetry and tracking continued to be maintained by NASA until it was decommissioned on June 15, 2001.</p>
+            </section>
+
+            <section data-scene="landsat5">
+                <h2>Landsat 5</h2>
+                <p>Landsat 5 was a low Earth orbit satellite launched on March 1, 1984 to collect imagery of the surface of Earth. It was a continuation of the Landsat Program.
+                  Landsat 5 was jointly managed by the U.S. Geological Survey (USGS) and the National Aeronautics and Space Administration (NASA). Data from Landsat 5 was collected
+                  and distributed from the USGS's Center for Earth Resources Observation and Science (EROS).</p>
+                <p>After 29 years in space, Landsat 5 was officially decommissioned on June 5, 2013. Near the end of its mission, its use was hampered by equipment failures and it
+                  was largely superseded by Landsat 7 and Landsat 8. Mission scientists anticipated the satellite will re-enter Earth's atmosphere and disintegrate around 2034.</p>
+                <p>Landsat 5 was recognized by Guinness World Records as the longest-operating Earth-observing satellite mission in history. Landsat 5 orbited the planet more than 150,000
+                  times while transmitting more than 2.5 million images of land surface conditions around the world. I greatly outlived its original three-year design life span.</p>
+                <center><img src="../../img/landsat5.jfif" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat5"></center><hr>
+                <p>Landsat 5 was an identical copy of Landsat 4 and was originally intended as a backup. It was deployed at an altitude of 705.3 km (438.3 mi) and it took about 16
+                  days to scan the entire Earth. It had a maximum transmission bandwidth of 85 Mbit/s. The Multi-Spectral Scanner was powered down in 1995 but reactivated again in
+                  2012.</p>
+            </section>
+
+            <section data-scene="landsat6">
+                <h2>Landsat 6</h2>
+                <p>Landsat 6 is equipped with upgraded versions of the instruments on Landsat 5 and was designed to carry forward the Landsat program. It was launched on October 5, 1993
+                  with a Titan II launch vehicle, <b>but failed to reach orbit</b>.</p>
+                <p>Landsat 6 omitted the Multi-Spectral Scanner, found on its predecessors, but carried an Enhanced Thematic Mapper which improved on the previous Thematic Mapper by
+                  adding a 15 m - resolution panchromatic band.</p>
+                <center><img src="../../img/landsat6.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat6"></center><hr>
+                <p>The Enhanced Thematic Mapper was designed and manufactured by Santa Barbara Research Center. The satellite was stabilized to 0.1 degrees in all three axes by using
+                  reaction wheels.</p>
+                <p>Data collected from the sensors were stored on tapes and transmitted to ground stations at 85 Mbit/s.</p>
+            </section>
+
+            <section data-scene="landsat7">
+                <h2>Landsat 7</h2>
+                <p>Landsat 7 is the seventh satellite of the Landsat program. It was Launched on April 15, 1999. Its primary goal is to refresh the global archive of satellite
+                  photos, providing up-to-date and cloud-free images. The Landsat Program is managed and operated by the USGS and data from Landsat 7 are collected and distributed
+                  by the USGS. The satellite's companion, Earth Observing-1, trailed by one minute and followed the same orbital characteristics. In 2011, EO-1's fuel was depleted
+                  and its orbit began to degrade.</p>
+                <p>Landsat 7 was built by Lockheed Martin Space Systems Company.</p>
+                <p>In 2016, NASA announced plans to attempt the first ever refueling of a live satellite by refueling Landsat 7 in 2020 with the Restore-L Mission. As of 2019 the
+                  date slipped to 2022.</p>
+                <center><img src="../../img/landsat7.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat7"></center><hr>
+                <p>Landsat 7 carries the Enhanced Thematic Mapper Plus (ETM+) senssor. The sensor collects data in seven spectral bands. Band 1 (visible blue), band 2 (visible green),
+                  band 3 (visible red), band 4 (near infrared), band 5 (shortwave infrared 1), band 6 (thermal infrared), band 7 (shortwave infrared 2), and band 8 (panchromatic).
+                  All the spectral bands have a spatial resolution of 30 m, except band 6 with 60 m (resampled to 30 m) and panchromatic band with 15 m spatial reolution.</p>
+                <p>Landsat 7 was designed to last for five years and has the capacity to collect and transmit up to 532 images per day. It is in a polar sun-synchronous orbit
+                  (scans across entire Earth's surface) at an altitude of 705 km. It has a remporal resolution of 232 orbits or 16 days.</p>
+                <p>Unlike its predecessors, Landsat 7 has a solid state memory of 378 gigabits (roughly 100 images).</p>
+            </section>
+
+            <section data-scene="landsat8">
+                <h2>Landsat 8 (Operational Land Imager - OLI)</h2>
+                <p>Landsat 8 is an American Earth observation satellite launched on February 11, 2013. It is the eighth satellite in the Landsat program; the seventh to reach
+                  orbit successfully. Originally called the Landsat Data Continuity Mission (LDCM), it is a collaboration between NASA and the United States Geological Survey
+                  (USGS). NASA Goddard Space Flight Center in Greenbelt, Maryland, provided development, mission systems engineering, and acquisition of the launch vehicle
+                  while the USGS provided for development of the ground systems and will conduct on-going mission operations.</p>
+                <p>The satellite was built by Orbital Sciences Corporation, who served as prime contractor for the mission. The spacecraft's instruments were constructed by
+                  Ball Aerospace and NASA's Goddard Space Flight Center. The launch was contracted to United Launch Alliance. During the first 108 days in orbit, LDCM underwent
+                  checkout and verification by NASA and on 30 May 2013, operations were transferred from NASA to the USGS when LDCM was officially renamed to Landsat 8.</p>
+                <center><img src="../../img/landsat8.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Landsat8"></center><hr>
+                <p>The OLI instrument uses a pushbroom sensor instead of whiskbroom sensors that were utilized on earlier Landsat satellites. The pushbroom sensor aligns the imaging
+                  detector arrays along its focal plane, allowing a view swath of 115 miles (185 km) cross-track field of view - opposed to sweeping across field of view. With over
+                  7,000 detectors per spectral band, the pushbroom design results in increased sensitivity, fewer moving parts, and improved land surface information.
+                <p>OLI collects data from nine spectral bands. Seven of the nine bands are consistent with the Thematic Mapper (TM) and Enhanced Thematic Mapper Plus (ETM+) sensors
+                  found on earlier Landsat satellites - providing compatibility with historical Landsat data while also improving measurement capabilities. The two new spectral bands,
+                  a deep blue coastal/aerosol band (band 1) and a shortwave-infrared cirrus band (band 9) allow scientists to measure water quality and improve detection of high
+                  thin clouds.</p>
+            </section>
+
+            <section data-scene="moontomars" data-background="../../img/nasamoon.jpg">
+
+                <div class="fullscreen text-left">
+                    <h1 class="display-4 d-flex justify-content-left">Moon to Mars </h1>
+                    <class="d-flex justify-content-left" style="color: rgba(255,255,255,0.95)">
+                    <p> NASA is getting ready to send astronauts to explore more of the Moon as
+                      part of the <a href="https://www.nasa.gov/specials/artemis/" target="_blank">Artemis</a> program, and the agency has selected SpaceX to continue development<br>
+                      of the first commercial human lander that will safely carry the next two American astronauts to the lunar surface. At least one of those astronauts will make history<br>
+                       as the first woman on the Moon. Another goal of the Artemis program includes landing the first person of color on the lunar surface.</p>
+                    <p>The agency’s powerful Space Launch System rocket will launch four astronauts aboard the Orion spacecraft for their multi-day journey to lunar orbit. There, two crew<br>
+                      members will transfer to the SpaceX human landing system (HLS) for the final leg of their journey to the surface of the Moon. After approximately a week exploring the<br>
+                      surface, they will board the lander for their short trip back to orbit where they will return to Orion and their colleagues before heading back to Earth.</p>
+                    <p>For more information about the human landing system, visit <a href="https://www.nasa.gov/content/humans-on-the-moon-0" target="_blank">Humans on the Moon</a></p>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!--map div-->
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+
+
+    <dl>
+        <dt>
+            <!--facebook icon-->
+            <a class="fab fa-facebook-square btn"
+               href="https://www.facebook.com/NASA.Landsat" target="_blank"></a>
+        </dt>
+        <dt>
+            <!--facebook icon-->
+            <a class="fab fa-github btn" href="https://github.com/Romeo-Rogers/geog678story_map/tree/main/ofashuyigeog678assign7" style="top:40px"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--info icon-->
+            <i class="fas fa-info-circle btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This story map describes the Landsat program. Landsat program is jointly managed by NASA
+                      (National Aeronautics and Space Administration) and USGS (United States Geological Survey).
+                      It is the longest continuous space-based record of the Earth's land in existence. Every day,
+                      Landsat satellites provide essential information to help land managers and policy makers make
+                      decisions about our resources and environment.</p>
+                    <p>Visit the <a href="https://landsat.gsfc.nasa.gov/" target="_blank">NASA Homepage</a> to access
+                      Landsat data and news about Landsat program.</p>
+                    <p>Story map was produced on April 17, 2021 (Adapted after Zhao, 2017).</p>
+                    <p>Author: Olufemi Fashuyi | Department of Geography and Geology | Eastern Michigan University.
+                    </p>
+                    <p>Story map contents sourced from NASA webpage and Wikipedia.</p>
+                </div>
+            </div>
+        </div>
+    </div>S
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+
+    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+    // var layers = {
+    //      layer1: {layer: layer1, legend: legend1},
+    //      layer2: {layer: layer2, legend: legend2}
+    //      ...
+    // }
+
+    var layers = {
+        ESRI: {
+          layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
+
+        CYC: {
+          layer: L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png')},
+
+        USGS: {
+            layer: L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}')},
+
+        TOPO: {
+            layer: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}')},
+
+        PHY: {
+                layer: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}')},
+
+        GEE: {
+            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png')},
+
+        SAT: {
+            layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+                id: 'mapbox.satellite'})},
+
+        cartodb_light: {layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')}
+    };
+
+    var scenes = {
+        overview: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Cover Page', layers: []},
+        landsat: {lat: 38.897658,   lng: -105.835370, zoom: 8, name: 'Landsat Program', layers: [layers.SAT]},
+        landsat1: {lat: 43.098873,  lng: -79.058437, zoom: 14, name: 'Landsat 1', layers: [layers.ESRI]},
+        landsat2: {lat: 44.0549563, lng: -123.0958048, zoom: 7, name: 'Landsat 2', layers: [layers.CYC]},
+        landsat3: {lat: 52.840459,  lng: -117.941396, zoom: 7, name: 'Landsat 3', layers: [layers.GEE]},
+        landsat4: {lat: 38.870486,  lng: -77.056303, zoom: 15, name: 'Landsat 4', layers: [layers.ESRI]},
+        landsat5: {lat: 44.9419055, lng: -123.0356407, zoom: 9, name: 'Landsat 5', layers: [layers.TOPO]},
+        landsat6: {lat: 38.897220,  lng: -77.036293, zoom: 13, name: 'Landsat 13', layers: [layers.USGS]},
+        landsat7: {lat: 48.857932,  lng: 2.294954, zoom: 15, name: 'Landsat 7', layers: [layers.SAT]},
+        landsat8: {lat: 31.455005,  lng:  84.875602, zoom: 7, name: 'Landsat 8', layers: [layers.PHY]},
+        moontomars: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'Moon to Mars'}
+    };
+
+    $('#storymap').storymap({
+        scenes: scenes,
+        baselayer: layers.cartodb_light,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        credits: "",
+        loader: true,
+        scalebar: false,
+        flyo: true,
+        navwidget: true,
+
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map($(".storymap-map")[0], {
+                zoomControl: false, scrollWheelZoom: false, fadeAnimation: true,
+                zoomAnimation: true
+            }).setView([44, -120], 7);
+
+            //add an miniglobe
+            new L.Control.GlobeMiniMap({
+                marker: 'red',
+                position: 'bottomright'
+            }).addTo(map);
+
+
+            return map;
+        }
+    });
+</script>
+</body>
+</html>
